@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+📘 SchoolFix - Report Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SchoolFix is a modern, user-friendly reporting platform designed to help schools track and manage maintenance issues efficiently. It allows students to submit reports, and admins to manage and update their statuses seamlessly.
 
-Currently, two official plugins are available:
+  // Features
+ User View
+Report issues with type, image, location, and priority.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Automatically saved to browser localStorage.
 
-## Expanding the ESLint configuration
+Responsive, glassmorphic UI with modern Tailwind styling.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ Admin View
+Secure admin login with basic username/password.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+View, give updates and delete reports.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Change report status: Reviewing , Reviewed , Gone to Work , Done .
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Color-coded priority badges (Important, Normal, Low).
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Responsive design for desktops and mobile.
+
+  Technologies Used
+React (with functional components + hooks)
+TypeScript
+Tailwind CSS
+Lucide Icons
+React Router
+LocalStorage for persistent data
+
+ Admin Credentials
+Default credentials (for testing):
+
+Username: Thisu
+Password: tip365
+
