@@ -1,4 +1,4 @@
-📘 SchoolFix - Report Management System
+ ## SchoolFix - Report Management System
 
 SchoolFix is a modern, user-friendly reporting platform designed to help schools track and manage maintenance issues efficiently. It allows students to submit reports, and admins to manage and update their statuses seamlessly.
 
