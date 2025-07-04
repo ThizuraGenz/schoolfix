@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* Main wrapper */
+.page-wrapper {
+
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Audiowide", sans-serif;
+  margin-left: 15px;
+  cursor: default;
+}
+
+.admin-btn {
+  background: none;
+  border: 2px solid #ccc;
+  padding: 6px 14px;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.admin-btn:hover {
+  background-color: #444;
+}
+
+/* Headline */
+.headline {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  font-family: "Lexend", sans-serif;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Glass Container */
+.glass-container {
+  background-color: rgba(30, 41, 59, 0.5);
+  border-radius: 1.5rem; 
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Reports Grid */
+.reports-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+/* Report Card */
+.report-card {
+  background-color: rgba(90, 92, 218, 0.1);
+  border-radius: 12px;
+  padding: 18px;
+  position: relative;
+  transition: 0.3s ease;
+  width: 295px;
+  min-height: 240px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.report-card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Report Image */
+.report-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Report Details */
+.report-details h4 {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+
+/* Delete Button */
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: #D70040 !important;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #ef0149 !important;
+}
+
+/* Add New Button */
+.actions {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.add-btn {
+  background-color: #240053;
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #3700a3;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: white;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.4rem 0.9rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  user-select: none;
+  letter-spacing: 0.05em;
+  cursor: default;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.badge.reviewing {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  color: #92400e;
+  border: 1.5px solid #fbbf24;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.4);
+}
+
+.badge.reviewed {
+  background: linear-gradient(135deg, #dbeafe, #93c5fd);
+  color: #1e40af;
+  border: 1.5px solid #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+.badge.gonetowork {
+  background: linear-gradient(135deg, #e0e7ff, #a5b4fc);
+  color: #3730a3;
+  border: 1.5px solid #6366f1;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+}
+
+.badge.done {
+  background: linear-gradient(135deg, #dcfce7, #86efac);
+  color: #166534;
+  border: 1.5px solid #22c55e;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.4);
+}
